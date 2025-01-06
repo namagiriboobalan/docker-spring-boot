@@ -11,7 +11,7 @@
         body {
             background: linear-gradient(to right, #87ceeb, #add8e6); /* Gradient from sky blue to light blue */
             font-family: Arial, sans-serif;
-            color: #D5006D; /* Dark pink font color */
+            color: #000080; /* Navy blue font color */
             height: 100vh;
             margin: 0;
             display: flex;
@@ -64,4 +64,15 @@
 <main role="main" class="container">
     <div class="starter-template">
         <h1 th:text="${title}">Hello Docker + Spring Boot + Helm + Kubernetes!!!!</h1>
-        <p th:text="${msg}">Good Morning.This is a demo where we deploy Spring Boot in
+        <p th:text="${msg}">Good Morning. This is a demo where we deploy Spring Boot in Kubernetes using Helm and Jenkins Pipeline!</p>
+    </div>
+
+    <!-- Adding a cat image -->
+    <div class="text-center">
+        <img src="https://placekitten.com/800/600" alt="Cute Cat" class="cat-image" />
+    </div>
+</main>
+
+<script data-th-src="@{/js/main.js}"></script>
+</body>
+</html>
