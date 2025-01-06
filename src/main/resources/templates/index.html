@@ -7,27 +7,51 @@
     <title>Hello Docker + Spring Boot + Helm + Kubernetes!!!!</title>
 
     <style>
-        /* Adding sky blue background color to the entire page */
+        /* Adding sky blue background color with a gradient */
         body {
-            background-color: #87ceeb; /* Sky blue background */
+            background: linear-gradient(to right, #87ceeb, #add8e6); /* Gradient from sky blue to light blue */
+            font-family: Arial, sans-serif;
+            color: #333;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 50px;
         }
 
-        /* Additional styling for the navbar */
+        /* Styling the navbar */
         .navbar {
             background-color: #343a40; /* Dark background for the navbar */
         }
 
-        /* Styling the starter template */
+        /* Styling for the starter template */
         .starter-template {
-            padding: 50px;
-            text-align: center;
+            padding: 30px;
+            color: white;
         }
 
-        /* Styling for the cat image */
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Styling the cat image */
         .cat-image {
             width: 50%; /* Resize the image */
+            max-width: 500px; /* Limit the max width */
             border-radius: 10px; /* Round corners */
             margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add some shadow around the image */
+            transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+        }
+
+        .cat-image:hover {
+            transform: scale(1.1); /* Slightly enlarge the image when hovered */
         }
     </style>
 </head>
@@ -39,8 +63,8 @@
 
 <main role="main" class="container">
     <div class="starter-template">
-        <h1 th:text="${title}">Default title.</h1>
-        <p th:text="${msg}">Default text.</p>
+        <h1 th:text="${title}">Hello Docker + Spring Boot + Helm + Kubernetes!!!!</h1>
+        <p th:text="${msg}">Welcome to this demo where we deploy Spring Boot in Kubernetes with Helm and Jenkins.</p>
     </div>
 
     <!-- Adding a cat image -->
@@ -52,4 +76,3 @@
 <script data-th-src="@{/js/main.js}"></script>
 </body>
 </html>
- 
